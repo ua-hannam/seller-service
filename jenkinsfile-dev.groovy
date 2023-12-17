@@ -13,8 +13,8 @@ node {
     stage('Build') {
         sh "${gradleHome}/bin/gradle clean build"
     }
-
-     post {
+}
+  post {
         success {
             slackSend (
                 channel: '#build-log', 
@@ -38,4 +38,3 @@ FAIL
                 """
             )
         }
-}
