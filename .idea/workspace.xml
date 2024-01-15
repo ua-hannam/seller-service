@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7a0be9e-18b8-46c0-8d9c-879e06421946" name="Changes" comment="🚀 Github Actions Test">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/build.yml" afterDir="false" />
+    <list default="true" id="e7a0be9e-18b8-46c0-8d9c-879e06421946" name="Changes" comment="🚀 Sonar Cloud 설정">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/uahannam/sellerservice/in/web/DemoController.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +29,13 @@
         </projects_view>
       </state>
     </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+      </list>
+    </option>
   </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
@@ -65,6 +71,11 @@
     &quot;spring.configuration.checksum&quot;: &quot;75bf551a2b950bf0662d844854baef23&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.uahannam.sellerservice.in.web" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="SellerServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="seller-service.main" />
@@ -85,7 +96,7 @@
       <workItem from="1705321945199" duration="3000" />
       <workItem from="1705322014633" duration="677000" />
       <workItem from="1705322696136" duration="450000" />
-      <workItem from="1705323149944" duration="1616000" />
+      <workItem from="1705323149944" duration="2292000" />
     </task>
     <task id="LOCAL-00001" summary="🛠️ 패키지 기본 세팅">
       <created>1705322328117</created>
@@ -115,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1705323375213</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="🚀 Sonar Cloud 설정">
+      <created>1705325082029</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1705325082029</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +154,7 @@
     <MESSAGE value="️ 패키지 기본 세팅" />
     <MESSAGE value="️ 버전 변경 및 플러그인 추가" />
     <MESSAGE value=" Github Actions Test" />
-    <option name="LAST_COMMIT_MESSAGE" value=" Github Actions Test" />
+    <MESSAGE value=" Sonar Cloud 설정" />
+    <option name="LAST_COMMIT_MESSAGE" value=" Sonar Cloud 설정" />
   </component>
 </project>
