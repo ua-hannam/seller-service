@@ -71,7 +71,6 @@ jobs:
           custom_payload: |
             {
               attachments: [{
-                color: '${{ job.status }}' === 'success' ? 'good' : '${{ job.status }}' === 'failure' ? 'danger' : 'warning',
                 text: `https://sonarcloud.io/dashboard?id=ua-hannam_${process.env.AS_REPO}&branch=${process.env.AS_REF}`,
               }]
             }
