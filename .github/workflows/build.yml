@@ -1,4 +1,4 @@
-name: SonarCloud
+name: BackEnd - CI only
 on:
   push:
     branches:
