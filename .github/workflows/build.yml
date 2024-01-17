@@ -47,14 +47,12 @@ jobs:
         run: ./gradlew build sonar --info
 
       - name: Slack Notification
-        uses: rtCamp/action-slack-notify@v2
+        uses: 8398a7/action-slack@v3
+        with:
+          status: ${{ job.status }}
+          fields: repo,message,commit,author,action,eventName,ref,workflow,job,took
+          if_mention: failure,cancelled
         env:
-          SLACK_CHANNEL: general
-          SLACK_COLOR: ${{ job.status }} # or a specific color like 'good' or '#ff00ff'
-          SLACK_ICON: https://github.com/rtCamp.png?size=48
-          SLACK_MESSAGE: 빌드 결과 => ${{ job.status }}
-          SLACK_TITLE: 빌드 결과 알람
-          SLACK_USERNAME: Notification-Bot
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
         if: always()
 
