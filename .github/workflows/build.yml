@@ -51,7 +51,7 @@ jobs:
         with:
           status: ${{ job.status }}
           job_name: Build and analyze
-          fields: repo,message,commit,action,eventName,ref,workflow,author,job,took
+          fields: repo,message,commit,action,eventName,ref,workflow,author,took
           if_mention: always
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
