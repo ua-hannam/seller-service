@@ -38,7 +38,6 @@ jobs:
         run: ./gradlew build sonar --info
         
   notification:
-      if: ${{ always() }}
       needs: [ build ]
       runs-on: ubuntu-latest
       steps:
