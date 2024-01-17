@@ -62,19 +62,3 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: ./gradlew test sonar --info
-
-      - name: Sonar Scan Notification
-        uses: rtCamp/action-slack-notify@v2
-        with:
-          status: custom
-          fields: workflow,job,commit,repo,ref,author,took
-          custom_payload: |
-            {
-              attachments: [{
-                text: `https://sonarcloud.io/dashboard?id=ua-hannam_${process.env.AS_REPO}&branch=${process.env.AS_REF}`,
-              }]
-            }
-        env:
-          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
-        if: always()
-      
