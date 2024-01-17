@@ -50,13 +50,10 @@ jobs:
         uses: 8398a7/action-slack@v3
         with:
           status: ${{ job.status }}
+          author_name: CI Monitoring_bot
           job_name: Build and analyze
           fields: repo,message,commit,eventName,ref,workflow,author,took
           if_mention: always
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         if: always()
-
-
-
-
