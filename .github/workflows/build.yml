@@ -43,7 +43,7 @@ jobs:
         run: ./gradlew build sonar --info
   notification:
       if: ${{ always() }}
-      needs: [ build ]
+      needs: [build]
       runs-on: ubuntu-latest
       steps:
       - name: Slack Notification
