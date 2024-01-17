@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7a0be9e-18b8-46c0-8d9c-879e06421946" name="Changes" comment="🚀 Sonar Cloud 설정">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/uahannam/sellerservice/in/web/DemoController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="e7a0be9e-18b8-46c0-8d9c-879e06421946" name="Changes" comment="🚀 Sonar Cloud 설정" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,6 +94,7 @@
       <workItem from="1705322014633" duration="677000" />
       <workItem from="1705322696136" duration="450000" />
       <workItem from="1705323149944" duration="2292000" />
+      <workItem from="1705505524088" duration="15000" />
     </task>
     <task id="LOCAL-00001" summary="🛠️ 패키지 기본 세팅">
       <created>1705322328117</created>
