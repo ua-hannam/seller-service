@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RestController
 @RequestMapping("/api/seller")
 class DemoController {
 
-    // @GetMapping("/test")
-    // fun testSeller() : ResponseEntity<HttpStatus> {
-    //     return ResponseEntity.ok().build()
-    // }
+     @GetMapping("/test")
+     fun testSeller() : ResponseEntity<HttpStatus> {
+         return ResponseEntity.ok().build()
+     }
 }
