@@ -37,12 +37,12 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: ./gradlew build sonar --info
         
-  slack-notification:
+  notification:
       if: ${{ always() }}
       needs: [ build ]
       runs-on: ubuntu-latest
       steps:
-      - name: Slack-send
+      - name: Slack Notification
         uses: rtCamp/action-slack-notify@v2
         env:
           SLACK_CHANNEL: general
