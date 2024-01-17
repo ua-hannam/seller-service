@@ -1,4 +1,4 @@
-name: BackEnd - CI only
+name: BackEnd - CI
 on:
   push:
     branches:
@@ -36,7 +36,13 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: ./gradlew build sonar --info
-      - name: Slack 알람 발송
+        
+  slack-notification:
+      if: ${{ always() }}
+      needs: [ build ]
+      runs-on: ubuntu-latest
+      steps:
+      - name: Slack-send
         uses: rtCamp/action-slack-notify@v2
         env:
           SLACK_CHANNEL: general
