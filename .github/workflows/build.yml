@@ -53,7 +53,7 @@ jobs:
           fields: repo,message,commit,author,action,eventName,ref,workflow,job,took
           if_mention: failure,cancelled
         env:
-          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         if: always()
 
 
