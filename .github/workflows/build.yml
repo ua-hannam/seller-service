@@ -34,7 +34,7 @@ jobs:
           restore-keys: ${{ runner.os }}-gradle
           
       - name: Gradle Build
-        run: ./gradlew build sonar --info -x test
+        run: ./gradlew build -x test
 
       - name: Slack Notification
         uses: 8398a7/action-slack@v3
