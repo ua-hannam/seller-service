@@ -1,3 +1,4 @@
+import io.spring.gradle.dependencymanagement.dsl.DependencyManagementExtension
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
@@ -9,8 +10,9 @@ plugins {
 	kotlin("plugin.jpa") version "1.4.32"
 }
 
-group = "com.uahannam"
-version = "0.0.1-SNAPSHOT"
+var group = "com.uahannam"
+var version = "0.0.1-SNAPSHOT"
+var springCloudVersion = "2022.0.4"
 
 java {
 	sourceCompatibility = JavaVersion.VERSION_17
@@ -26,9 +28,20 @@ dependencies {
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("io.projectreactor.kotlin:reactor-kotlin-extensions")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
+	implementation("org.springframework.cloud:spring-cloud-starter-config")
+	implementation("org.springframework.cloud:spring-cloud-starter-bootstrap")
+	implementation("org.springframework.boot:spring-boot-starter-actuator")
 	runtimeOnly("com.h2database:h2")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
+
+/* Spring Cloud 의존성 버전 최신화*/
+configure<DependencyManagementExtension> {
+	imports {
+		mavenBom("org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}")
+	}
+}
+
 
 sonar {
 	properties {
