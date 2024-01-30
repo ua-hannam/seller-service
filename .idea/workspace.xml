@@ -4,18 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7a0be9e-18b8-46c0-8d9c-879e06421946" name="Changes" comment="🚀 Sonar Cloud 설정">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bootstrap.yml" afterDir="false" />
+    <list default="true" id="e7a0be9e-18b8-46c0-8d9c-879e06421946" name="Changes" comment="🛠️ Spring Cloud Config client 설정 및 테스트">
       <change beforePath="$PROJECT_DIR$/.gradle/8.5/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/uahannam/sellerservice/in/web/DemoController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/uahannam/sellerservice/in/web/DemoController.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bootstrap.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +99,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/kimsungmin/Desktop/project/uahannam/seller-service",
+    "last_opened_file_path": "/Users/jade/Desktop/project/uahan/seller-service",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -184,6 +182,7 @@
       <workItem from="1706187457080" duration="48000" />
       <workItem from="1706187516335" duration="458000" />
       <workItem from="1706269002056" duration="6336000" />
+      <workItem from="1706614107842" duration="2959000" />
     </task>
     <task id="LOCAL-00001" summary="🛠️ 패키지 기본 세팅">
       <created>1705322328117</created>
@@ -242,6 +241,7 @@
     <MESSAGE value="️ 버전 변경 및 플러그인 추가" />
     <MESSAGE value=" Github Actions Test" />
     <MESSAGE value=" Sonar Cloud 설정" />
-    <option name="LAST_COMMIT_MESSAGE" value=" Sonar Cloud 설정" />
+    <MESSAGE value="️ Spring Cloud Config client 설정 및 테스트" />
+    <option name="LAST_COMMIT_MESSAGE" value="️ Spring Cloud Config client 설정 및 테스트" />
   </component>
 </project>

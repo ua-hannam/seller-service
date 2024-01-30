@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
-@RequestMapping("/api/seller")
+@RequestMapping("/seller")
 class DemoController(private val env: Environment) {
 
     @GetMapping("/test")
